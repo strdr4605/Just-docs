@@ -1,7 +1,10 @@
 {
-"version": 3,
-"mappings": "AAEA,MAAM;EACJ,gBAAgB,ECEV,OAAO;EDDb,MAAM,EAAE,GAAG;EACX,KAAK,EAAE,IAAI;EACX,MAAM,EC4Be,IAAI",
-"sources": ["footer.sass","_vars.sass"],
-"names": [],
-"file": "footer.css"
+	"version": 3,
+	"file": "footer.css",
+	"sources": [
+		"footer.sass",
+		"_vars.sass"
+	],
+	"mappings": "AAEA,AAAA,MAAM,CAAC;EACL,gBAAgB,ECEV,OAAO;EDDb,MAAM,EAAE,GAAI;EACZ,KAAK,EAAE,IAAK;EACZ,MAAM,EC4Be,IAAI,GD5BO",
+	"names": []
 }

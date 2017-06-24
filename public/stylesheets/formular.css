@@ -39,6 +39,17 @@ label {
   label:first-child {
     border-top: none; }
 
+.legal {
+  display: none; }
+
+#parat-location, #dest-location {
+  display: none; }
+  #parat-location select, #dest-location select {
+    margin: 5px;
+    border-radius: 5px;
+    padding-right: 20px;
+    font-size: 20px; }
+
 .button,
 .rerun-button {
   padding: 10px 20px;
@@ -120,7 +131,6 @@ label {
     transform: rotate(60deg); }
   100% {
     transform: translateY(800px) rotate(10deg); } }
-
 @keyframes in {
   0% {
     opacity: 0;

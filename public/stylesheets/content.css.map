@@ -1,7 +1,10 @@
 {
-"version": 3,
-"mappings": "AAEA,QAAQ;EACN,OAAO,EAAE,IAAI;EACb,IAAI,EAAE,CAAC;EACP,gBAAgB,ECGV,OAAO",
-"sources": ["content.sass","_vars.sass"],
-"names": [],
-"file": "content.css"
+	"version": 3,
+	"file": "content.css",
+	"sources": [
+		"content.sass",
+		"_vars.sass"
+	],
+	"mappings": "AAEA,AAAA,QAAQ,CAAC;EACP,OAAO,EAAE,IAAK;EACd,IAAI,EAAE,CAAE;EACR,gBAAgB,ECGV,OAAO,GDHa",
+	"names": []
 }

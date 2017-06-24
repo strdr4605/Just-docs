@@ -15,14 +15,38 @@ block content
                     .title Sunteți:
                     form
                         label
-                            input(type="radio" name="radio" id="individual" class="person")
+                            input(type="radio" name="radio" id="individual")
                             | Persoană fizică
                         label
-                            input(type="radio" name="radio" id="legal" class="person")
+                            input(type="radio" name="radio" id="legal")
                             | Persoană juridică
-                        label
-                            input(type="radio" name="radio" id="lega2l" class="person")
-                            | Persoană juridică
+                        label(class="legal")
+                            input(type="radio" name="legal" id="parat")
+                            | Sediu pâtât
+                        label(class="legal")
+                            input(type="radio" name="legal" id="dest")
+                            | Sediu pârât2
+                        label(id="parat-location")
+                            p Sediul pârât
+                            select
+                                option(value="") Selectați Raionul
+                                option(value="volvo") Volvo
+                                option(value="mercedes") Mercedes
+                            select
+                                option(value="") Selectați Orașul
+                                option(value="volvo") Volvo
+                                option(value="mercedes") Mercedes
+                        label(id="dest-location")
+                            p Sediul distinatar
+                            select
+                                option(value="") Selectați Raionul
+                                option(value="volvo") Volvo
+                                option(value="mercedes") Mercedes
+                            select
+                                option(value="") Selectați Orașul
+                                option(value="volvo") Volvo
+                                option(value="mercedes") Mercedes
+
                         .text-center.fade-in
                             .button Următorul
 

@@ -55,5 +55,21 @@ $('.rerun-button').click(function(){
 });
 
 $( '#individual').on( "click", function() {
-  $('#')
+  $('#parat-location').show()
+  $('.legal').hide()
+})
+
+$( '#legal').on( "click", function() {
+  $('#parat-location').hide()
+  $('.legal').show()
+})
+
+$( '#parat').on( "click", function() {
+  $('#parat-location').show()
+  $('#dest-location').hide()
+})
+
+$( '#dest').on( "click", function() {
+  $('#dest-location').show()
+  $('#parat-location').hide()
 })

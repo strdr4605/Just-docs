@@ -1,7 +1,9 @@
 {
-"version": 3,
-"mappings": "AAAQ,sBAAW;AACX,uBAAY;AACZ,wBAAa;AACb,yBAAc;AACd,uBAAY",
-"sources": ["main.sass"],
-"names": [],
-"file": "main.css"
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"main.sass"
+	],
+	"mappings": "AAAA,OAAO,CAAP,cAAO;AACP,OAAO,CAAP,eAAO;AACP,OAAO,CAAP,gBAAO;AACP,OAAO,CAAP,iBAAO;AACP,OAAO,CAAP,eAAO",
+	"names": []
 }
