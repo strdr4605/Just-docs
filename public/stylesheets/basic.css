@@ -1,0 +1,9 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background: #aaa;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh; }
+
+/*# sourceMappingURL=basic.css.map */

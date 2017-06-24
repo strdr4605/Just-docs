@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "basic.css",
+	"sources": [
+		"basic.sass",
+		"_vars.sass"
+	],
+	"mappings": "AAEA,AAAA,IAAI,CAAC;EACH,OAAO,EAAE,GAAI;EACb,MAAM,EAAE,GAAI;EACZ,UAAU,ECqBH,IAAI;EDpBX,OAAO,EAAE,IAAK;EACd,SAAS,EAAE,MAAO;EAClB,UAAU,EAAE,KAAM,GAAG",
+	"names": []
+}

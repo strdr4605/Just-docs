@@ -1,9 +1,7 @@
-body {
-  margin: 0px;
-  padding: 0px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+@import url(basic.css);
+@import url(header.css);
+@import url(content.css);
+@import url(formular.css);
+@import url(footer.css);
 
-a {
-  color: #00B7FF; }
-
-/*# sourceMappingURL=main1.css.mapp */
+/*# sourceMappingURL=main.css.map */

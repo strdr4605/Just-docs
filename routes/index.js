@@ -7,4 +7,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.get('/formular', function(req, res, next) {
+  res.render('formular', { title: 'Express' });
+});
+
 module.exports = router;
