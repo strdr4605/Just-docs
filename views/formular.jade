@@ -1,0 +1,86 @@
+extends layout
+
+block content
+    //include header
+    .content
+        .modal-wrap
+            .modal-header
+                span.is-active
+                span
+                span
+
+            .modal-bodies
+
+                .modal-body.modal-body-step-1.is-showing
+                    .title Sunteți:
+                    form
+                        label
+                            input(type="radio" name="radio" id="individual")
+                            | Persoană fizică
+                        label
+                            input(type="radio" name="radio" id="legal")
+                            | Persoană juridică
+                        label(class="legal")
+                            input(type="radio" name="legal" id="parat")
+                            | Sediu pâtât
+                        label(class="legal")
+                            input(type="radio" name="legal" id="recl")
+                            | Sediu reclamant
+                        label(id="parat-location")
+                            p Sediul pârât
+                            select
+                                option(value="") Selectați Raionul
+                                option(value="Chisinau") Chișinău
+                                option(value="Balti") Bălți
+                            select
+                                option(value="") Selectați Orașul
+                                option(value="Chisinau") Chișinău
+                                option(value="Balti") Bălți
+                        label(id="recl-location")
+                            p Sediul reclamant
+                            select
+                                option(value="") Selectați Raionul
+                                option(value="Chisinau") Chișinău
+                                option(value="Balti") Bălți
+                            select
+                                option(value="") Selectați Orașul
+                                option(value="Chisinau") Chișinău
+                                option(value="Balti") Bălți
+
+                        .text-center.fade-in
+                            .button Următorul
+
+
+
+                .modal-body.modal-body-step-2
+                    .title Date Reclamant
+                    form
+                        label
+                            input(type="radio" name="radio" id="personal")
+                            | Personal
+                        label
+                            input(type="radio" name="radio" id="reprezentant")
+                            | Prin Reprezentant
+                        label(class="personal")
+                            input(type="text" placeholder="Nume")
+                            input(type="text" placeholder="Adresa")
+                        label(class="reprezentant")
+                            input(type="text" placeholder="Nume Reprezentant")
+                            input(type="text" placeholder="Adresa Reprezentant")
+                        .text-center.fade-in
+                            .button Următorul
+
+
+
+
+
+                .modal-body.modal-body-step-3
+                    .title Completat!
+                    .text-center
+                        .button.generate Generază cererea!
+
+
+        .text-center
+            .rerun-button ReRun
+
+    include footer

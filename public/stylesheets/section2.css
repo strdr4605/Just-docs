@@ -1,0 +1,68 @@
+#section2 {
+  background-color: #f6f6f6;
+  height: 350px;
+  width: 100%;
+  color: #29af7d; }
+  #section2 .center-text {
+    position: absolute; }
+  #section2 ul {
+    list-style: none;
+    padding: 0; }
+  #section2 #select {
+    position: relative;
+    padding: 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin-top: 135px; }
+    #section2 #select li {
+      border-radius: 3px;
+      position: relative;
+      margin: 0 15px;
+      padding: 40px 0;
+      font-size: 20px;
+      text-transform: uppercase;
+      text-align: center;
+      width: 370px;
+      max-height: 100px;
+      background-color: white; }
+    #section2 #select .drop-menu li {
+      margin: 0;
+      margin: 2px 0;
+      display: none; }
+    #section2 #select .drop-menu li:first-child {
+      margin-top: 42px; }
+    #section2 #select .drop-menu {
+      position: absolute; }
+    #section2 #select li:hover .drop-menu li {
+      display: block;
+      perspective: 1000px;
+      opacity: 0; }
+      #section2 #select li:hover .drop-menu li:nth-child(1) {
+        animation-name: drop;
+        animation-duration: 200ms;
+        animation-delay: -100ms;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards; }
+      #section2 #select li:hover .drop-menu li:nth-child(2) {
+        animation-name: drop;
+        animation-duration: 200ms;
+        animation-delay: 0ms;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards; }
+      #section2 #select li:hover .drop-menu li:nth-child(3) {
+        animation-name: drop;
+        animation-duration: 200ms;
+        animation-delay: 100ms;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards; }
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: rotateY(-90deg) translateY(30px); }
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg) translateY(0px); } }
+
+/*# sourceMappingURL=section2.css.map */

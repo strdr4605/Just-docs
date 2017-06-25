@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "section4.css",
+	"sources": [
+		"section4.sass",
+		"_vars.sass"
+	],
+	"mappings": "AAEA,AAAA,SAAS,CAAC;EACR,gBAAgB,EAAE,KAAM;EACxB,MAAM,EAAE,KAAM;EACd,KAAK,EAAE,IAAK;EACZ,KAAK,EC6BM,OAAO,GD7BG",
+	"names": []
+}
