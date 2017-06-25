@@ -1,7 +1,23 @@
 header {
-  background-color: #7FDBFF;
+  background-color: #29af7d;
   top: 0px;
-  height: 70px;
-  width: auto; }
+  height: 100px;
+  width: auto;
+  display: flex;
+  flex-flow: row; }
+  header ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    margin: 70px 0 0;
+    flex-grow: 1;
+    padding: 0; }
+    header ul li {
+      margin: 0px 100px 0px 0px; }
+  header #right-list {
+    display: flex;
+    justify-content: flex-end; }
+    header #right-list li {
+      margin: 0px 0px 0px 100px; }
 
 /*# sourceMappingURL=header.css.map */

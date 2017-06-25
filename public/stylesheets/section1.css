@@ -1,0 +1,22 @@
+#section1 {
+  background-color: #29af7d;
+  height: 600px;
+  width: 100%; }
+  #section1 .container {
+    margin-bottom: 100px;
+    margin-top: 70px;
+    justify-content: flex-end; }
+  #section1 #logo {
+    position: absolute; }
+  #section1 #banner {
+    position: absolute;
+    margin-left: -450px; }
+  #section1 #motto {
+    font-size: 35px;
+    position: absolute;
+    margin-top: 120px; }
+    #section1 #motto h1 {
+      margin: 30px 0;
+      text-align: right; }
+
+/*# sourceMappingURL=section1.css.map */

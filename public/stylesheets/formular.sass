@@ -1,8 +1,13 @@
+@import vars
+
+.content
+  height: 2000px
+
 .title
   text-transform: uppercase
   text-align: center
   margin-bottom: 30px
-  color: #FF8F00
+  color: $main-color
   font-weight: 300
   font-size: 24px
   letter-spacing: 1px
@@ -12,8 +17,7 @@
   color: #666
   margin-bottom: 30px
 
-input[type="text"],
-input[type="email"]
+input[type="text"]
   padding: 10px 20px
   border: 1px solid #999
   border-radius: 3px
@@ -24,7 +28,7 @@ input[type="email"]
   outline: none
 
   &:focus
-    border-color: #FF6F00
+    border-color: $main-color
 
 input[type="radio"]
   margin-right: 10px
@@ -40,10 +44,7 @@ label
   &:first-child
     border-top: none
 
-.legal
-  display: none
-
-#parat-location, #dest-location
+#parat-location, #recl-location, .legal, .personal, .reprezentant
   display: none
 
   select
@@ -57,7 +58,7 @@ label
 .rerun-button
   padding: 10px 20px
   border-radius: 3px
-  background: #FF6F00
+  background: $main-color
   color: white
   text-transform: uppercase
   letter-spacing: 1px
@@ -65,7 +66,7 @@ label
   cursor: pointer
 
   &:hover
-    background: darken(#FF6F00, 5%)
+    background: darken($main-color, 5%)
 
   &.rerun-button
     border: 1px solid rgba(255,255,255,0.6)
@@ -99,7 +100,7 @@ label
 
     &.is-active
       background: rgba(0,0,0,0.4)
-      background: #FF8F00
+      background: $main-color
 
 .modal-bodies
   position: relative

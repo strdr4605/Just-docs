@@ -1,7 +1,7 @@
 extends layout
 
 block content
-    include header
+    //include header
     .content
         .modal-wrap
             .modal-header
@@ -24,28 +24,28 @@ block content
                             input(type="radio" name="legal" id="parat")
                             | Sediu pâtât
                         label(class="legal")
-                            input(type="radio" name="legal" id="dest")
-                            | Sediu pârât2
+                            input(type="radio" name="legal" id="recl")
+                            | Sediu reclamant
                         label(id="parat-location")
                             p Sediul pârât
                             select
                                 option(value="") Selectați Raionul
-                                option(value="volvo") Volvo
-                                option(value="mercedes") Mercedes
+                                option(value="Chisinau") Chișinău
+                                option(value="Balti") Bălți
                             select
                                 option(value="") Selectați Orașul
-                                option(value="volvo") Volvo
-                                option(value="mercedes") Mercedes
-                        label(id="dest-location")
-                            p Sediul distinatar
+                                option(value="Chisinau") Chișinău
+                                option(value="Balti") Bălți
+                        label(id="recl-location")
+                            p Sediul reclamant
                             select
                                 option(value="") Selectați Raionul
-                                option(value="volvo") Volvo
-                                option(value="mercedes") Mercedes
+                                option(value="Chisinau") Chișinău
+                                option(value="Balti") Bălți
                             select
                                 option(value="") Selectați Orașul
-                                option(value="volvo") Volvo
-                                option(value="mercedes") Mercedes
+                                option(value="Chisinau") Chișinău
+                                option(value="Balti") Bălți
 
                         .text-center.fade-in
                             .button Următorul
@@ -53,27 +53,31 @@ block content
 
 
                 .modal-body.modal-body-step-2
-                    .title Step 2
-                    .description Would you rather
+                    .title Date Reclamant
                     form
                         label
-                            input(type="radio" name="radio")
-                            | live one life that lasts 1,000 years?
+                            input(type="radio" name="radio" id="personal")
+                            | Personal
                         label
-                            input(type="radio" name="radio" id="radio2")
-                            | live 10 lives that last 100 years each?
+                            input(type="radio" name="radio" id="reprezentant")
+                            | Prin Reprezentant
+                        label(class="personal")
+                            input(type="text" placeholder="Nume")
+                            input(type="text" placeholder="Adresa")
+                        label(class="reprezentant")
+                            input(type="text" placeholder="Nume Reprezentant")
+                            input(type="text" placeholder="Adresa Reprezentant")
                         .text-center.fade-in
-                            .button Next
+                            .button Următorul
 
 
 
 
 
                 .modal-body.modal-body-step-3
-                    .title Step 3
-                    .description Check your email for the game results.
+                    .title Completat!
                     .text-center
-                        .button Done!
+                        .button.generate Generază cererea!
 
 
         .text-center

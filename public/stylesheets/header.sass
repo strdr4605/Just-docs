@@ -1,7 +1,28 @@
 @import vars
 
 header
-  background-color: $aqua
+  background-color: $main-color
   top: 0px
   height: $header-footer-height
   width: auto
+  display: flex
+  flex-flow: row
+
+
+  ul
+    list-style: none
+    display: flex
+    flex-flow: row
+    margin: 70px 0 0
+    flex-grow: 1
+    padding: 0
+
+    li
+      margin: 0px 100px 0px 0px
+
+  #right-list
+    display: flex
+    justify-content: flex-end
+
+    li
+      margin: 0px 0px 0px 100px

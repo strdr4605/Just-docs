@@ -1,6 +1,8 @@
 .content {
   display: flex;
   flex: 1;
-  background-color: #39CCCC; }
+  flex-flow: column; }
+  .content .center-text {
+    text-transform: uppercase; }
 
 /*# sourceMappingURL=content.css.map */

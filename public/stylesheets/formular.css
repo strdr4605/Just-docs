@@ -1,8 +1,11 @@
+.content {
+  height: 2000px; }
+
 .title {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 30px;
-  color: #FF8F00;
+  color: #29af7d;
   font-weight: 300;
   font-size: 24px;
   letter-spacing: 1px; }
@@ -12,8 +15,7 @@
   color: #666;
   margin-bottom: 30px; }
 
-input[type="text"],
-input[type="email"] {
+input[type="text"] {
   padding: 10px 20px;
   border: 1px solid #999;
   border-radius: 3px;
@@ -22,9 +24,8 @@ input[type="email"] {
   margin-bottom: 20px;
   box-sizing: border-box;
   outline: none; }
-  input[type="text"]:focus,
-  input[type="email"]:focus {
-    border-color: #FF6F00; }
+  input[type="text"]:focus {
+    border-color: #29af7d; }
 
 input[type="radio"] {
   margin-right: 10px; }
@@ -39,12 +40,9 @@ label {
   label:first-child {
     border-top: none; }
 
-.legal {
+#parat-location, #recl-location, .legal, .personal, .reprezentant {
   display: none; }
-
-#parat-location, #dest-location {
-  display: none; }
-  #parat-location select, #dest-location select {
+  #parat-location select, #recl-location select, .legal select, .personal select, .reprezentant select {
     margin: 5px;
     border-radius: 5px;
     padding-right: 20px;
@@ -54,7 +52,7 @@ label {
 .rerun-button {
   padding: 10px 20px;
   border-radius: 3px;
-  background: #FF6F00;
+  background: #29af7d;
   color: white;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -62,7 +60,7 @@ label {
   cursor: pointer; }
   .button:hover,
   .rerun-button:hover {
-    background: #e66400; }
+    background: #249a6e; }
   .button.rerun-button,
   .rerun-button.rerun-button {
     border: 1px solid rgba(255, 255, 255, 0.6);
@@ -94,7 +92,7 @@ label {
     background: rgba(0, 0, 0, 0.2); }
     .modal-header span.is-active {
       background: rgba(0, 0, 0, 0.4);
-      background: #FF8F00; }
+      background: #29af7d; }
 
 .modal-bodies {
   position: relative;

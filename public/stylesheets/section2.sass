@@ -1,0 +1,68 @@
+@import vars
+
+#section2
+  background-color: #f6f6f6
+  height: 350px
+  width: 100%
+  color: $main-color
+
+  .center-text
+    position: absolute
+
+  ul
+    list-style: none
+    padding: 0
+
+  #select
+    position: relative
+    padding: 0
+    display: flex
+    flex-flow: row
+    justify-content: center
+    margin-top: 135px
+
+    li
+      border-radius: 3px
+      position: relative
+      margin: 0 15px
+      padding: 40px 0
+      font-size: 20px
+      text-transform: uppercase
+      text-align: center
+      width: 370px
+      max-height: 100px
+      background-color: white
+
+    .drop-menu li
+      margin: 0
+      margin: 2px 0
+      display: none
+
+    .drop-menu li:first-child
+      margin-top: 42px
+
+    .drop-menu
+      position: absolute
+
+    li:hover .drop-menu li
+      display: block
+      perspective: 1000px
+      opacity: 0
+      @for $i from 1 through 3
+        &:nth-child(#{$i})
+          animation:
+            name: drop
+            duration: 200ms
+            delay: (100ms * $i) - 200
+            timing-function: ease-in-out
+            fill-mode: forwards
+
+@keyframes drop
+  0%
+    opacity: 0
+    transform: rotateY(-90deg) translateY(30px)
+  100%
+    opacity: 1
+    transform: rotateY(0deg) translateY(0px)
+
+

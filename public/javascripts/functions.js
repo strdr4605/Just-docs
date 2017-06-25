@@ -11,7 +11,7 @@ $('.button').click(function(){
 
 
 function step1($step, $pag){
-  console.log('step1');
+  // console.log('step1');
   // animate the step out
   $step.addClass('animate-out');
 
@@ -33,7 +33,7 @@ function step1($step, $pag){
 
 
 function step3($step, $pag){
-  console.log('3');
+  // console.log('3');
 
   // animate the step out
   $step.parents('.modal-wrap').addClass('animate-up');
@@ -56,6 +56,7 @@ $('.rerun-button').click(function(){
 
 $( '#individual').on( "click", function() {
   $('#parat-location').show()
+  $('#recl-location').hide()
   $('.legal').hide()
 })
 
@@ -66,10 +67,35 @@ $( '#legal').on( "click", function() {
 
 $( '#parat').on( "click", function() {
   $('#parat-location').show()
-  $('#dest-location').hide()
+  $('#recl-location').hide()
 })
 
-$( '#dest').on( "click", function() {
-  $('#dest-location').show()
+$( '#recl').on( "click", function() {
+  $('#recl-location').show()
   $('#parat-location').hide()
+})
+
+$( '#personal').on( "click", function() {
+  $('.personal').show()
+  $('.reprezentant').hide()
+})
+
+$( '#reprezentant').on( "click", function() {
+  $('.personal').hide()
+  $('.reprezentant').show()
+})
+
+$('.generate',).on('click', function () {
+  // var forms = $('form')
+  // console.log(forms[0].children)
+  // console.log(forms[1].children)
+
+  $.post("http://172.31.216.10:9000/data",
+    {
+      name: "Donald Duck",
+      city: "Duckburg"
+    },
+    function(data, status){
+      console.log(data)
+    });
 })
