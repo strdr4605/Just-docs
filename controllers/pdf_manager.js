@@ -1,10 +1,10 @@
 const PDFDocument = require('pdfkit');
 const fs = require('fs');
 const uuid = require('uuid/v1');					
-const path = './../pdfs/';
+const path = __dirname + '/../pdfs/';
 
-var font = "LiberationSans-Regular.ttf"
-var fontB = "LiberationSans-Bold.ttf"
+var font = __dirname + "/LiberationSans-Regular.ttf"
+var fontB = __dirname + "/LiberationSans-Bold.ttf"
 
 var pageWidth = 500
 var rightColumnWidth = 160
@@ -21,7 +21,7 @@ var alignContent2 = {width: pageWidth, align: "left", lineGap: 3, continued: fal
 var local = {
 	"instanta" : "JUDECĂTORIA RÂŞCANI",
 	"r_nume": "Rotari Vasile",
-	"r_adresa": "mun. Chişinău, Str. Trandafirilor nr. 140/1",
+	"r_adresa": "mun. Chişinău, Str. Dimo 1",
 	"p_nume": "Popa Mihai",
 	"p_adresa": "mun. Chişinău, str. V. Alecsandri nr. 49",
 	"imprumut_data": "12.05.2017",
@@ -43,7 +43,7 @@ function reclamant(doc, data) {
 }
 
 function parat(doc, data) {
-	var text = data.r_nume + "\n"+"Domiciliu: " + data.r_adresa;
+	var text = data.p_nume + "\n"+"Domiciliu: " + data.p_adresa;
 	doc.moveDown()
 	doc.font(fontB, 12).text("Pârât: ", alignRight3).font(font, 12).text(text, alignRight2).restore();
 }
@@ -97,13 +97,30 @@ function semnatura(doc, data) {
 	doc.translate(signatureOffset, 0).font(font, 12).text("_______________", alignRight2)
 }
 
+function temp_format_data(data) {
+	local.instanta = data.instanta || local.instanta
+	local.r_nume = data.r_nume || local.r_nume
+	local.r_adresa = data.r_adresa || local.r_adresa
+	local.p_nume = data.p_nume || local.p_nume
+	local.p_adresa = data.p_adresa || local.p_adresa
+	local.imprumut_data = data.imprumut_data || local.imprumut_data
+	local.imprumut_suma = data.imprumut_suma || local.imprumut_suma
+	local.restituire_data = data.restituire_data || local.restituire_data
+	local.suma_dobanda = data.suma_dobanda || local.suma_dobanda
+	local.cerere_data = data.cerere_data || local.cerere_data
+	local.suma_penalitate = data.suma_penalitate || local.suma_penalitate
+
+	return local
+}
+
 function generate(data) {
 	console.log(data)
+	data = temp_format_data(data)
 	var doc = new PDFDocument( { size: "legal", margin: 60} );
 	var fileName = uuid()
 	doc.pipe(fs.createWriteStream(path + fileName + ".pdf"));
 
-	[instanta, reclamant, parat, cerereTitlu, continut, solicit, semnatura].forEach(function(x) { x(doc, data)})
+	[instanta, reclamant, parat, cerereTitlu, continut, solicit, semnatura].forEach(function(x) { x(doc, local)})
 
 	doc.save();
 	doc.end();

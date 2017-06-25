@@ -1,7 +1,10 @@
 {
-"version": 3,
-"mappings": "AAEA,SAAS;EACP,gBAAgB,EAAE,OAAO;EACzB,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,IAAI;EAGX,gBAAM;IACJ,KAAK,EAAE,KAAK;IACZ,SAAS,EAAE,IAAI;IACf,UAAU,EAAE,MAAM",
-"sources": ["section3.sass"],
-"names": [],
-"file": "section3.css"
+	"version": 3,
+	"file": "section3.css",
+	"sources": [
+		"section3.sass",
+		"_vars.sass"
+	],
+	"mappings": "AAEA,AAAA,SAAS,CAAC;EACR,gBAAgB,EAAE,OAAQ;EAC1B,MAAM,EAAE,KAAM;EACd,KAAK,EAAE,IAAK,GAMc;EAT5B,AAME,SANO,CAMP,MAAM,CAAC;IACL,KAAK,EAAE,KAAM;IACb,SAAS,EAAE,IAAK;IAChB,UAAU,EAAE,MAAO,GAAG",
+	"names": []
 }

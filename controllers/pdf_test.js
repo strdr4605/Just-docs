@@ -21,7 +21,7 @@ var alignContent2 = {width: pageWidth, align: "left", lineGap: 3, continued: fal
 var local = {
 	"instanta" : "JUDECĂTORIA RÂŞCANI",
 	"r_nume": "Rotari Vasile",
-	"r_adresa": "mun. Chişinău, Str. Trandafirilor nr. 140/1",
+	"r_adresa": "mun. Chişinău, Str. Dimo 1",
 	"p_nume": "Popa Mihai",
 	"p_adresa": "mun. Chişinău, str. V. Alecsandri nr. 49",
 	"imprumut_data": "12.05.2017",
@@ -43,7 +43,7 @@ function reclamant(doc, data) {
 }
 
 function parat(doc, data) {
-	var text = data.r_nume + "\n"+"Domiciliu: " + data.r_adresa;
+	var text = data.r_nume + "\n"+"Domiciliu: " + data.p_adresa;
 	doc.moveDown()
 	doc.font(fontB, 12).text("Pârât: ", alignRight3).font(font, 12).text(text, alignRight2).restore();
 }
